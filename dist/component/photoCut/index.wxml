@@ -1,0 +1,19 @@
+<block>
+    <view>
+        <block wx:if="{{isShow}}">
+            <view class="photoCut">
+                <view class="cutBox" id="cutBox" bindtouchmove="touchMove" bindtouchstart="touchStart" bindtouchend="touchEnd">
+                    <canvas class="myCanvas" canvas-id="shareImg"></canvas>
+                    <view class="iconBox">
+                        <view class="photoSave btn" bindtap="close">
+                            <at-icon value="close" __triggerObserer="{{ _triggerObserer }}" size="30rpx" color="#fff"></at-icon>
+                        </view>
+                        <view class="photoClose btn" bindtap="cutImgNow">
+                            <at-icon value="check" __triggerObserer="{{ _triggerObserer }}" size="30rpx" color="#F00"></at-icon>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</block>

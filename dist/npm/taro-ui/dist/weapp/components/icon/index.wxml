@@ -1,0 +1,3 @@
+<block>
+    <text class="{{anonymousState__temp}}" style="{{anonymousState__temp2}}" bindtap="handleClick" data-e-tap-so="this"></text>
+</block>

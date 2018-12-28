@@ -1,0 +1,39 @@
+.lyModal{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.2);
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    width: 628px;
+    height: 254px;
+    padding: 40px 0;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+.btn{
+    height: 95px;
+    width: 500px;
+    text-align: center;
+    line-height: 95px;
+}
+.cancel{
+    color: #fff;
+    background-color: #cacaca;
+}
+.confirm{
+    color: #fff;
+    background-color: #f5363b;
+}

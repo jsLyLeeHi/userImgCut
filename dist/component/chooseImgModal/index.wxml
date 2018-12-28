@@ -1,0 +1,12 @@
+<block>
+    <view>
+        <block wx:if="{{showModal}}">
+            <view class="lyModal" bindtap="closeModal">
+                <view class="modal" catchtap="stopMp">
+                    <view class="cancel btn" bindtap="album">相册</view>
+                    <view class="confirm btn" bindtap="camera">拍照</view>
+                </view>
+            </view>
+        </block>
+    </view>
+</block>

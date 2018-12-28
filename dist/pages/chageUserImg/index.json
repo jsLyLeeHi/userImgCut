@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "photo-cut": "../../component/photoCut/index",
+    "choose-img-modal": "../../component/chooseImgModal/index",
+    "tost": "../../component/Tost/index"
+  },
+  "navigationBarTitleText": "修改头像"
+}

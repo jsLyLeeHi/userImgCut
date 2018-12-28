@@ -1,0 +1,38 @@
+<block>
+    <view>
+        <block>
+            <block wx:if="{{type === 'text'}}">
+                <at-toast isOpened="{{isOpened}}" __triggerObserer="{{ _triggerObserer }}" text="{{text == '' ? '内容' : text}}" duration="{{anonymousState__temp}}"></at-toast>
+            </block>
+            <block wx:else>
+                <block>
+                    <block wx:if="{{type === 'error'}}">
+                        <at-toast isOpened="{{isOpened}}" __triggerObserer="{{ _triggerObserer }}" status="error" text="{{text == '' ? '错误' : text}}" duration="{{anonymousState__temp2}}"></at-toast>
+                    </block>
+                    <block wx:else>
+                        <block>
+                            <block wx:if="{{type === 'success'}}">
+                                <at-toast isOpened="{{isOpened}}" __triggerObserer="{{ _triggerObserer }}" status="success" text="{{text == '' ? '成功' : text}}" duration="{{anonymousState__temp3}}"></at-toast>
+                            </block>
+                            <block wx:else>
+                                <block>
+                                    <block wx:if="{{type === 'loading'}}">
+                                        <at-toast isOpened="{{isOpened}}" __triggerObserer="{{ _triggerObserer }}" text="{{text == '' ? '加载中' : text}}" status="loading" duration="{{anonymousState__temp4}}"></at-toast>
+                                    </block>
+                                    <block wx:else>
+                                        <block>
+                                            <block wx:if="{{type === 'cus'}}">
+                                                <at-toast icon="{{icon}}" __triggerObserer="{{ _triggerObserer }}" isOpened="{{isOpened}}" text="{{text == '' ? '成功' : text}}" duration="{{anonymousState__temp5}}"></at-toast>
+                                            </block>
+                                            <block wx:else>{{"没有此类型的组件"}}</block>
+                                        </block>
+                                    </block>
+                                </block>
+                            </block>
+                        </block>
+                    </block>
+                </block>
+            </block>
+        </block>
+    </view>
+</block>

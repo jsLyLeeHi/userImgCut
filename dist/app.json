@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/chageUserImg/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f1373a",
+    "navigationBarTitleText": "图片裁切",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#797979",
+    "selectedColor": "#f1373a",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/chageUserImg/index",
+        "iconPath": "images/icon-index1.png",
+        "selectedIconPath": "images/icon-index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/chageUserImg/index",
+        "iconPath": "images/icon-index1.png",
+        "selectedIconPath": "images/icon-index.png",
+        "text": "首页"
+      }
+    ]
+  }
+}

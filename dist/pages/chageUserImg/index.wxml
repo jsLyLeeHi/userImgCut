@@ -1,0 +1,12 @@
+<block>
+    <view class="userImg">
+        <view class="header">
+            <image bindtap="clickFace" class="userFace" src="{{UserFace == '' ? noUserFace : UserFace}}" />
+        </view>
+        <view class="chooseAlbum btn" bindtap="upImg">上传头像</view>
+        <view class="bc btn" bindtap="saveUserFace">保存</view>
+        <photo-cut bindongetcut="getCutModal" __triggerObserer="{{ _triggerObserer }}" __fn_onGetCut="{{true}}"></photo-cut>
+        <choose-img-modal bindongetmodal="getImageModal" __triggerObserer="{{ _triggerObserer }}" __fn_onGetModal="{{true}}"></choose-img-modal>
+        <tost bindontost="getTost" __triggerObserer="{{ _triggerObserer }}" __fn_onTost="{{true}}"></tost>
+    </view>
+</block>
